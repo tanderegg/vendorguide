@@ -46,7 +46,7 @@ Vendorguide::Application.configure do
   config.cache_store = :dalli_store
 end
 
-ENV['facebook_app_id']     = '187200514633182'
-ENV['facebook_app_secret'] = '853edb6234f1b73e468674503940d2e0'
+ENV['facebook_app_id']     = '181954595174257'
+ENV['facebook_app_secret'] = '990a6268f6ff33b4318c732d150a57d5'
 
 

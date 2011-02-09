@@ -8,7 +8,6 @@ class User < ActiveRecord::Base
 
   validates_presence_of :facebook_token
 
-
   def self.find_for_facebook_oauth(access_token, signed_in_resource=nil)
     data = ActiveSupport::JSON.decode(access_token.get('https://graph.facebook.com/me?'))
     facebook_user = Mogli::User.find("me", Mogli::Client.new(access_token.token))

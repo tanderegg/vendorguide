@@ -1,22 +1,34 @@
 @import "compass/css3";
 @import "compass/utilities";
 
+/* General styles */
+
+img {
+  margin: 0;
+  padding: 0;
+}
 
 /* These are styles to make the page look nice */
 
-body { background-color: #dadada;}
+body { background: #4F4F4F url("/images/header_background_tile.png") repeat-x;}
 
 .content {
   background: #fff;
   padding: 40px;
-  margin: 10px auto 40px auto;
+  margin: 0px auto 40px auto;
   width: 880px;
   @include border-radius(24px);
 }
 
 .header {
-  width: 880px;
-  margin: 5px auto;
+  background: #4F4F4F url("/images/header_background.png") no-repeat;
+  width: 960px;
+  margin: 0px auto;
+  margin-bottom: 30px;
+}
+
+.header_logo {
+  padding-top: 30px;
 }
 
 .login {
