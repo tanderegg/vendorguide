@@ -18,6 +18,8 @@
           .login-info
             = link_to "Sign in as User with Facebook", user_oauth_authorize_url(:facebook)
       <div style="clear: both;"></div>
+      .header_logo
+        = image_tag 'vendorguide_header.png'
     .content
       .messages
         - flash.each do |key, msg|

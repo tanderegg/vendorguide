@@ -1,14 +1,21 @@
-/* These are styles to make the page look nice */
-/* line 7, ../../../../app/stylesheets/application/general.scss */
-body {
-  background-color: #dadada;
+/* General styles */
+/* line 6, ../../../../app/stylesheets/application/general.scss */
+img {
+  margin: 0;
+  padding: 0;
 }
 
-/* line 9, ../../../../app/stylesheets/application/general.scss */
+/* These are styles to make the page look nice */
+/* line 13, ../../../../app/stylesheets/application/general.scss */
+body {
+  background: #4f4f4f url("/images/header_background_tile.png") repeat-x;
+}
+
+/* line 15, ../../../../app/stylesheets/application/general.scss */
 .content {
   background: #fff;
   padding: 40px;
-  margin: 10px auto 40px auto;
+  margin: 0px auto 40px auto;
   width: 880px;
   -moz-border-radius: 24px;
   -webkit-border-radius: 24px;
@@ -18,19 +25,26 @@ body {
   border-radius: 24px;
 }
 
-/* line 17, ../../../../app/stylesheets/application/general.scss */
+/* line 23, ../../../../app/stylesheets/application/general.scss */
 .header {
-  width: 880px;
-  margin: 5px auto;
+  background: #4f4f4f url("/images/header_background.png") no-repeat;
+  width: 960px;
+  margin: 0px auto;
+  margin-bottom: 30px;
 }
 
-/* line 22, ../../../../app/stylesheets/application/general.scss */
+/* line 30, ../../../../app/stylesheets/application/general.scss */
+.header_logo {
+  padding-top: 30px;
+}
+
+/* line 34, ../../../../app/stylesheets/application/general.scss */
 .login {
   float: right;
   height: 30px;
 }
 
-/* line 27, ../../../../app/stylesheets/application/general.scss */
+/* line 39, ../../../../app/stylesheets/application/general.scss */
 .login > div.login-info {
   float: right;
   vertical-align: center;
@@ -39,27 +53,27 @@ body {
   margin-left: 10px;
 }
 
-/* line 35, ../../../../app/stylesheets/application/general.scss */
+/* line 47, ../../../../app/stylesheets/application/general.scss */
 .login > div.login-image {
   float: right;
 }
 
-/* line 40, ../../../../app/stylesheets/application/general.scss */
+/* line 52, ../../../../app/stylesheets/application/general.scss */
 .login img {
   margin: 0px;
 }
 
-/* line 45, ../../../../app/stylesheets/application/general.scss */
+/* line 57, ../../../../app/stylesheets/application/general.scss */
 .vendor .reviews {
   padding-top: 20px;
   margin: 10px 8px 8px 10px;
 }
-/* line 48, ../../../../app/stylesheets/application/general.scss */
+/* line 60, ../../../../app/stylesheets/application/general.scss */
 .vendor .reviews .review-inline {
   padding-bottom: 10px;
 }
 
-/* line 56, ../../../../app/stylesheets/application/general.scss */
+/* line 68, ../../../../app/stylesheets/application/general.scss */
 .add-vendor {
   float: right;
   background: url("/images/icons/add.png") no-repeat left;
