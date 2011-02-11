@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110211024824) do
+ActiveRecord::Schema.define(:version => 20110211173828) do
 
   create_table "reviews", :force => true do |t|
     t.integer  "vendor_id"
@@ -45,7 +45,7 @@ ActiveRecord::Schema.define(:version => 20110211024824) do
 
   create_table "vendors", :force => true do |t|
     t.string   "name"
-    t.string   "description"
+    t.text     "description",          :limit => 255
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
