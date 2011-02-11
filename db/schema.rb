@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110123234045) do
+ActiveRecord::Schema.define(:version => 20110211024824) do
 
   create_table "reviews", :force => true do |t|
     t.integer  "vendor_id"
@@ -49,6 +49,20 @@ ActiveRecord::Schema.define(:version => 20110123234045) do
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "address"
+    t.string   "city"
+    t.string   "state"
+    t.string   "zip"
+    t.string   "phone"
+    t.string   "fax"
+    t.string   "email"
+    t.string   "website"
+    t.string   "default_login_url"
+    t.text     "services_description"
+    t.text     "clients_description"
+    t.text     "pricing_description"
+    t.text     "references"
+    t.text     "press"
   end
 
 end

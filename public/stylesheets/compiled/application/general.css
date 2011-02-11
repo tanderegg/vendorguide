@@ -14,9 +14,9 @@ body {
 /* line 15, ../../../../app/stylesheets/application/general.scss */
 .content {
   background: #fff;
-  padding: 40px;
-  margin-left: 170px;
-  width: 710px;
+  padding: 20px;
+  margin-left: 180px;
+  width: 740px;
   -moz-border-radius-topright: 24px;
   -webkit-border-top-right-radius: 24px;
   -o-border-top-right-radius: 24px;
@@ -27,14 +27,27 @@ body {
 
 /* line 23, ../../../../app/stylesheets/application/general.scss */
 .wrapper {
+  background: #F3EAAD;
   width: 960px;
   margin: 0px auto;
+  -moz-border-radius-topleft: 24px;
+  -webkit-border-top-left-radius: 24px;
+  -o-border-top-left-radius: 24px;
+  -ms-border-top-left-radius: 24px;
+  -khtml-border-top-left-radius: 24px;
+  border-top-left-radius: 24px;
+  -moz-border-radius-topright: 24px;
+  -webkit-border-top-right-radius: 24px;
+  -o-border-top-right-radius: 24px;
+  -ms-border-top-right-radius: 24px;
+  -khtml-border-top-right-radius: 24px;
+  border-top-right-radius: 24px;
 }
 
-/* line 29, ../../../../app/stylesheets/application/general.scss */
+/* line 31, ../../../../app/stylesheets/application/general.scss */
 .sidebar {
   background: #F3EAAD;
-  width: 170px;
+  width: 180px;
   padding-top: 20px;
   float: left;
   -moz-border-radius-topleft: 24px;
@@ -45,49 +58,44 @@ body {
   border-top-left-radius: 24px;
 }
 
-/* line 37, ../../../../app/stylesheets/application/general.scss */
+/* line 39, ../../../../app/stylesheets/application/general.scss */
 .sidebar h1 {
   font-size: 12pt;
   color: #FFF;
   background: url("/images/sidebar_title.png") no-repeat;
-  width: 150px;
+  width: 155px;
   margin-left: -10px;
   height: 27px;
   padding: 7px 5px 3px 15px;
 }
 
-/* line 47, ../../../../app/stylesheets/application/general.scss */
-.sidebar .tag_cloud {
-  padding: 0px 10px 10px 10px;
+/* line 49, ../../../../app/stylesheets/application/general.scss */
+.sidebar .content_area {
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
-/* line 51, ../../../../app/stylesheets/application/general.scss */
-.sidebar .tag_cloud a {
+/* line 54, ../../../../app/stylesheets/application/general.scss */
+.sidebar .content_area a {
   text-decoration: none;
 }
 
-/* line 55, ../../../../app/stylesheets/application/general.scss */
-.sidebar .tag_cloud a:hover {
+/* line 58, ../../../../app/stylesheets/application/general.scss */
+.sidebar .content_area a:hover {
   text-decoration: underline;
 }
 
-/* line 59, ../../../../app/stylesheets/application/general.scss */
-.sidebar .cloud_item {
+/* line 62, ../../../../app/stylesheets/application/general.scss */
+.sidebar .content_area .cloud_item {
   display: inline;
 }
 
-/* line 63, ../../../../app/stylesheets/application/general.scss */
-.sidebar .cloud_item .large_text {
+/* line 66, ../../../../app/stylesheets/application/general.scss */
+.sidebar .content_area .cloud_item .large_text {
   font-size: 150%;
 }
 
-/* line 67, ../../../../app/stylesheets/application/general.scss */
-.sidebar ul {
-  list-style-type: none;
-  margin-left: 10px;
-}
-
-/* line 73, ../../../../app/stylesheets/application/general.scss */
+/* line 70, ../../../../app/stylesheets/application/general.scss */
 .header {
   background: #4f4f4f url("/images/header_background.png") no-repeat;
   width: 960px;
@@ -95,50 +103,65 @@ body {
   margin-bottom: 30px;
 }
 
-/* line 80, ../../../../app/stylesheets/application/general.scss */
+/* line 77, ../../../../app/stylesheets/application/general.scss */
 .header_logo {
-  padding-top: 30px;
+  padding-top: 25px;
 }
 
-/* line 84, ../../../../app/stylesheets/application/general.scss */
+/* line 81, ../../../../app/stylesheets/application/general.scss */
 .login {
   float: right;
   height: 30px;
+  margin-top: 5px;
 }
 
-/* line 89, ../../../../app/stylesheets/application/general.scss */
+/* line 87, ../../../../app/stylesheets/application/general.scss */
 .login > div.login-info {
   float: right;
   vertical-align: center;
-  height: 25px;
+  height: 30px;
   margin-top: 6px;
   margin-left: 10px;
 }
 
-/* line 97, ../../../../app/stylesheets/application/general.scss */
+/* line 95, ../../../../app/stylesheets/application/general.scss */
 .login > div.login-image {
   float: right;
 }
 
-/* line 102, ../../../../app/stylesheets/application/general.scss */
+/* line 100, ../../../../app/stylesheets/application/general.scss */
 .login img {
   margin: 0px;
 }
 
-/* line 107, ../../../../app/stylesheets/application/general.scss */
+/* line 105, ../../../../app/stylesheets/application/general.scss */
 .vendor .reviews {
   padding-top: 20px;
   margin: 10px 8px 8px 10px;
 }
-/* line 110, ../../../../app/stylesheets/application/general.scss */
+/* line 108, ../../../../app/stylesheets/application/general.scss */
 .vendor .reviews .review-inline {
   padding-bottom: 10px;
 }
+/* line 113, ../../../../app/stylesheets/application/general.scss */
+.vendor .contact_info {
+  float: right;
+  padding: 1em;
+  margin: 0px 0px 10px 10px;
+  background: #F3EAAD;
+  border: 1px solid #D1C88B;
+}
 
-/* line 118, ../../../../app/stylesheets/application/general.scss */
+/* line 123, ../../../../app/stylesheets/application/general.scss */
 .add-vendor {
   float: right;
   background: url("/images/icons/add.png") no-repeat left;
   padding-left: 20px;
   height: 16px;
+}
+
+/* line 130, ../../../../app/stylesheets/application/general.scss */
+.address {
+  float: left;
+  width: 6em;
 }

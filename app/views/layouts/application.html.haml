@@ -24,7 +24,7 @@
     .wrapper
       .sidebar
         %h1 Tag Cloud
-        .tag_cloud
+        .content_area
           .cloud_item
             = link_to "Voter File", "", :class => 'large_text'
           .cloud_item
@@ -34,13 +34,14 @@
           .cloud_item
             = link_to "Community Organizing", "", :class => 'large_text'
         %h1 My Vendors
-        %ul
-          %li 
-            = link_to "Catalist", ""
-          %li 
-            = link_to "Voter Activation Network", ""
-          %li 
-            = link_to "We Also Walk Dogs", ""
+        .content_area
+          %ul
+            %li 
+              = link_to "Catalist", ""
+            %li 
+              = link_to "Voter Activation Network", ""
+            %li 
+              = link_to "We Also Walk Dogs", ""
       .content
         .messages
           - flash.each do |key, msg|

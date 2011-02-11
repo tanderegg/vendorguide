@@ -2,5 +2,19 @@
   = form.inputs do
     = form.input :name
     = form.input :description, :input_html => {:rows => 6}, :as => :text
+    = form.input :address, :input_html => {:class => 'address'}
+    = form.input :city, :class => 'city'
+    = form.input :state, :class => 'state'
+    = form.input :zip, :class => 'zip'
+    = form.input :phone
+    = form.input :fax
+    = form.input :email
+    = form.input :website
+    = form.input :default_login_url
+    = form.input :services_description, :input_html => {:rows => 6}
+    = form.input :clients_description, :input_html => {:rows => 6}
+    = form.input :pricing_description, :input_html => {:rows => 6}
+    = form.input :references, :input_html => {:rows => 6}
+    = form.input :press, :input_html => {:rows => 6}
   = form.buttons do
     = form.commit_button

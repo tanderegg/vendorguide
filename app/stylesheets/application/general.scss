@@ -14,21 +14,23 @@ body { background: #4F4F4F url("/images/header_background_tile.png") repeat-x;}
 
 .content {
   background: #fff;
-  padding: 40px;
-  margin-left: 170px;
-  width: 710px;
+  padding: 20px;
+  margin-left: 180px;
+  width: 740px;
   @include border-corner-radius(top, right, 24px);
 }
 
 .wrapper {
-  //background: #EAE194;
+  background: #F3EAAD;
   width: 960px;
   margin: 0px auto;
+  @include border-corner-radius(top, left, 24px);
+  @include border-corner-radius(top, right, 24px);
 }
 
 .sidebar {
   background: #F3EAAD;
-  width: 170px;
+  width: 180px;
   padding-top: 20px;
   float: left;
   @include border-corner-radius(top, left, 24px);
@@ -38,37 +40,32 @@ body { background: #4F4F4F url("/images/header_background_tile.png") repeat-x;}
   font-size: 12pt;
   color: #FFF;
   background: url("/images/sidebar_title.png") no-repeat;
-  width: 150px;
+  width: 155px;
   margin-left: -10px;
   height: 27px;
   padding: 7px 5px 3px 15px;
 }
 
-.sidebar .tag_cloud {
-  padding: 0px 10px 10px 10px;
+.sidebar .content_area {
+  padding: 10px;
+  margin-bottom: 10px;
 }
 
-.sidebar .tag_cloud a {
+.sidebar .content_area a {
   text-decoration: none;
 }
 
-.sidebar .tag_cloud a:hover {
+.sidebar .content_area a:hover {
   text-decoration: underline;
 }
 
-.sidebar .cloud_item {
+.sidebar .content_area .cloud_item {
   display: inline;
 }
 
-.sidebar .cloud_item .large_text {
+.sidebar .content_area .cloud_item .large_text {
   font-size: 150%;
 }
-
-.sidebar ul {
-  list-style-type: none;
-  margin-left: 10px;
-}
-
 
 .header {
   background: #4F4F4F url("/images/header_background.png") no-repeat;
@@ -78,18 +75,19 @@ body { background: #4F4F4F url("/images/header_background_tile.png") repeat-x;}
 }
 
 .header_logo {
-  padding-top: 30px;
+  padding-top: 25px;
 }
 
 .login {
   float: right;
   height: 30px;
+  margin-top: 5px;
 }
 
 .login > div.login-info {
   float: right;
   vertical-align:center;
-  height: 25px;
+  height: 30px;
   margin-top:6px;
   margin-left:10px;
 }
@@ -112,12 +110,24 @@ body { background: #4F4F4F url("/images/header_background_tile.png") repeat-x;}
 
     }
   }
+  .contact_info {
+    float: right;
+    padding: 1em;
+    margin: 0px 0px 10px 10px;
+    background: #F3EAAD;
+    border: 1px solid #D1C88B;
+  }
 
 }
 
 .add-vendor {
- float: right;
- background: url('/images/icons/add.png')  no-repeat left;
- padding-left:20px;
- height: 16px;
+  float: right;
+  background: url('/images/icons/add.png')  no-repeat left;
+  padding-left:20px;
+  height: 16px;
+}
+
+.address {
+  float: left;
+  width: 6em;
 }
