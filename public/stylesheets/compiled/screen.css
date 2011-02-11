@@ -893,13 +893,23 @@ img {
   padding: 0;
 }
 
+/* line 11, ../../../app/stylesheets/application/general.scss */
+a {
+  text-decoration: none;
+}
+
+/* line 15, ../../../app/stylesheets/application/general.scss */
+a:hover {
+  text-decoration: underline;
+}
+
 /* These are styles to make the page look nice */
-/* line 13, ../../../app/stylesheets/application/general.scss */
+/* line 21, ../../../app/stylesheets/application/general.scss */
 body {
   background: #4f4f4f url("/images/header_background_tile.png") repeat-x;
 }
 
-/* line 15, ../../../app/stylesheets/application/general.scss */
+/* line 23, ../../../app/stylesheets/application/general.scss */
 .header {
   background: #4f4f4f url("/images/header_background.png") no-repeat;
   width: 960px;
@@ -907,19 +917,19 @@ body {
   margin-bottom: 30px;
 }
 
-/* line 22, ../../../app/stylesheets/application/general.scss */
+/* line 30, ../../../app/stylesheets/application/general.scss */
 .header_logo {
   padding-top: 25px;
 }
 
-/* line 26, ../../../app/stylesheets/application/general.scss */
+/* line 34, ../../../app/stylesheets/application/general.scss */
 .login {
   float: right;
   height: 30px;
   margin-top: 5px;
 }
 
-/* line 32, ../../../app/stylesheets/application/general.scss */
+/* line 40, ../../../app/stylesheets/application/general.scss */
 .login > div.login-info {
   float: right;
   vertical-align: center;
@@ -928,17 +938,17 @@ body {
   margin-left: 10px;
 }
 
-/* line 40, ../../../app/stylesheets/application/general.scss */
+/* line 48, ../../../app/stylesheets/application/general.scss */
 .login > div.login-image {
   float: right;
 }
 
-/* line 45, ../../../app/stylesheets/application/general.scss */
+/* line 53, ../../../app/stylesheets/application/general.scss */
 .login img {
   margin: 0px;
 }
 
-/* line 49, ../../../app/stylesheets/application/general.scss */
+/* line 57, ../../../app/stylesheets/application/general.scss */
 .wrapper {
   background: #F3EAAD;
   width: 960px;
@@ -956,7 +966,7 @@ body {
   -khtml-border-top-right-radius: 24px;
   border-top-right-radius: 24px;
 }
-/* line 56, ../../../app/stylesheets/application/general.scss */
+/* line 64, ../../../app/stylesheets/application/general.scss */
 .wrapper .sidebar {
   background: #F3EAAD;
   width: 180px;
@@ -969,7 +979,7 @@ body {
   -khtml-border-top-left-radius: 24px;
   border-top-left-radius: 24px;
 }
-/* line 63, ../../../app/stylesheets/application/general.scss */
+/* line 71, ../../../app/stylesheets/application/general.scss */
 .wrapper .sidebar h1 {
   font-size: 12pt;
   color: #FFF;
@@ -979,18 +989,10 @@ body {
   height: 27px;
   padding: 7px 5px 3px 15px;
 }
-/* line 73, ../../../app/stylesheets/application/general.scss */
+/* line 81, ../../../app/stylesheets/application/general.scss */
 .wrapper .sidebar .content_area {
   padding: 10px;
   margin-bottom: 10px;
-}
-/* line 79, ../../../app/stylesheets/application/general.scss */
-.wrapper .sidebar .content_area a {
-  text-decoration: none;
-}
-/* line 83, ../../../app/stylesheets/application/general.scss */
-.wrapper .sidebar .content_area a:hover {
-  text-decoration: underline;
 }
 /* line 87, ../../../app/stylesheets/application/general.scss */
 .wrapper .sidebar .content_area .cloud_item {
@@ -1071,25 +1073,24 @@ body {
 /* line 156, ../../../app/stylesheets/application/general.scss */
 .vendor-list .vendor-row .vendor-name {
   float: left;
-  width: 15em;
+  width: 20em;
   font-size: 150%;
-  font-weight: bold;
 }
-/* line 163, ../../../app/stylesheets/application/general.scss */
+/* line 162, ../../../app/stylesheets/application/general.scss */
 .vendor-list .vendor-row .vendor-rating {
-  float: left;
-  width: 8em;
+  float: right;
+  width: 7em;
   font-size: 150%;
 }
-/* line 169, ../../../app/stylesheets/application/general.scss */
+/* line 168, ../../../app/stylesheets/application/general.scss */
 .vendor-list .vendor-row .vendor-tags {
   padding-top: 1em;
 }
-/* line 174, ../../../app/stylesheets/application/general.scss */
+/* line 173, ../../../app/stylesheets/application/general.scss */
 .vendor-list .even {
   background: #EEEEFF;
 }
-/* line 178, ../../../app/stylesheets/application/general.scss */
+/* line 177, ../../../app/stylesheets/application/general.scss */
 .vendor-list .odd {
   background: #F6F6F6;
 }

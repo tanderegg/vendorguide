@@ -8,6 +8,14 @@ img {
   padding: 0;
 }
 
+a {
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 /* These are styles to make the page look nice */
 
 body { background: #4F4F4F url("/images/header_background_tile.png") repeat-x;}
@@ -76,14 +84,6 @@ body { background: #4F4F4F url("/images/header_background_tile.png") repeat-x;}
     }
 
     .content_area {
-      a {
-        text-decoration: none;
-      }
-
-      a:hover {
-        text-decoration: underline;
-      }
-
       .cloud_item {
         display: inline;
       }
@@ -155,14 +155,13 @@ body { background: #4F4F4F url("/images/header_background_tile.png") repeat-x;}
 
     .vendor-name {
       float: left;
-      width: 15em;
+      width: 20em;
       font-size: 150%;
-      font-weight: bold;
     }
 
     .vendor-rating {
-      float: left;
-      width: 8em;
+      float: right;
+      width: 7em;
       font-size: 150%;
     }
 
