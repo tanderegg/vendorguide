@@ -3,7 +3,7 @@
     %p
       = @vendor.address
     %p
-      = @vendor.city + ", " + @vendor.state + " " + @vendor.zip
+      = (@vendor.city || '') + ", " + (@vendor.state || '') + " " + (@vendor.zip || '')
     -if @vendor.phone
       %p
         = @vendor.phone
