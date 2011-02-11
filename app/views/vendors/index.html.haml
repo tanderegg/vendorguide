@@ -1,7 +1,18 @@
 .add-vendor
   = link_to "Add a Vendor", new_vendor_path
 
+.search-vendors
+  %input
+  %input{ :type => 'submit', :value => 'Search' }
+
 - if @vendors.any?
-  - @vendors.each do |vendor|
-    .vendor-mini
-      = link_to vendor.name, vendor
+  .vendor-list
+    - @vendors.each do |vendor|
+      %div{ :class => 'vendor-row ' + cycle('odd', 'even') }
+        .vendor-name
+          = link_to vendor.name, vendor
+        .vendor-rating
+          = "Rating: " + vendor.rating
+        %br/
+        .vendor-tags
+          = raw("<strong>Tags: </strong>" + vendor.tags)        
