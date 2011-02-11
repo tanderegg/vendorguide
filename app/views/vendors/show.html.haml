@@ -21,27 +21,27 @@
   %h4
     Description
   %p
-    = @vendor.description
+    = raw RedCloth.new(@vendor.description).to_html if @vendor.description
   %h4
     Services
   %p
-    = @vendor.services_description
+    = raw RedCloth.new(@vendor.services_description).to_html if @vendor.services_description
   %h4
     Clients and Case Studies
   %p
-    = @vendor.clients_description
+    = raw RedCloth.new(@vendor.clients_description).to_html if @vendor.clients_description
   %h4
     Pricing
   %p
-    = @vendor.pricing_description
+    = raw RedCloth.new(@vendor.pricing_description).to_html if @vendor.pricing_description
   %h4
     References    
   %p
-    = @vendor.references
+    = raw RedCloth.new(@vendor.references).to_html if @vendor.references
   %h4
     In the Press
   %p
-    = @vendor.press
+    = raw RedCloth.new(@vendor.press).to_html if @vendor.press
 
   = link_to "Edit Details", edit_vendor_path(@vendor)
   .reviews

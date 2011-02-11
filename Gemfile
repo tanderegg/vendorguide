@@ -14,6 +14,7 @@ gem 'mogli'
 gem 'dalli'
 gem 'exceptional'
 gem 'json'
+gem 'RedCloth', '4.2.2'
 
 group :test, :development do
   gem "ruby-debug19"
