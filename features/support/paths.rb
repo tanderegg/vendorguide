@@ -12,7 +12,8 @@ module NavigationHelpers
       '/'
     when /the new vendor page/
       new_vendor_path
-
+    when /the vendor page/
+      vendor_path(Vendor.find(:first))
 
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:

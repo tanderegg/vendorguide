@@ -24,5 +24,5 @@ Vendorguide::Application.configure do
   config.action_dispatch.best_standards_support = :builtin
 end
 
-ENV['facebook_app_id']     = '192326054112241'
-ENV['facebook_app_secret'] = '7d4a1b799e2c89ab66231c0ddecf6f7a'
+ENV['facebook_app_id']     = '191218707574625'
+ENV['facebook_app_secret'] = 'b868de159d8e6aad58ef750ea13ab0ea'

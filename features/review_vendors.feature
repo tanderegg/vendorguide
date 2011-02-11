@@ -7,21 +7,8 @@ Feature: Review vendors
     Given a vendor exists
     And I am logged into the site
     And I am on the vendor page
-    When I fill in "Review" with "describing the vendor"
-    And  I fill in "Score" with "5"
-    And  I press "Create"
+    When I fill in "Description" with "describing the vendor"
+    And  I select "5" from "Score"
+    And  I press "Create Review"
     Then I should see "describing the vendor"
-    
-
-  Scenario: Edit a new vendor
-    Given a vendor exists
-    And I am on the vendor page
-    And I am logged into the site
-    When I follow "Edit Description"
-    And I fill in "Description" with "New Vendor Foo"
-    And I press "Save"
-    Then I should see "New Vendor Foo"
-    And I follow "History"
-    Then I should see "New Vendor Foo"
-    And I should see "Vendor Description"
 

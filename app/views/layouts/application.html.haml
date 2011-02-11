@@ -16,14 +16,35 @@
             = image_tag current_user.me.square_image_url, :width => '25px', :height => '25px'
         - else
           .login-info
-            = link_to "Sign in as User with Facebook", user_oauth_authorize_url(:facebook)
+            = link_to "Sign in with Facebook", user_omniauth_authorize_path(:facebook)
       <div style="clear: both;"></div>
       .header_logo
-        = image_tag 'vendorguide_header.png'
-    .content
-      .messages
-        - flash.each do |key, msg|
-          %div{'class' => key}
-            = msg
+        = link_to (image_tag 'vendorguide_header.png'), root_url
 
-      = yield
+    .wrapper
+      .sidebar
+        %h1 Tag Cloud
+        .tag_cloud
+          .cloud_item
+            = link_to "Voter File", "", :class => 'large_text'
+          .cloud_item
+            = link_to "Polling", ""
+          .cloud_item
+            = link_to "Online Communications", ""
+          .cloud_item
+            = link_to "Community Organizing", "", :class => 'large_text'
+        %h1 My Vendors
+        %ul
+          %li 
+            = link_to "Catalist", ""
+          %li 
+            = link_to "Voter Activation Network", ""
+          %li 
+            = link_to "We Also Walk Dogs", ""
+      .content
+        .messages
+          - flash.each do |key, msg|
+            %div{'class' => key}
+              = msg
+
+        = yield

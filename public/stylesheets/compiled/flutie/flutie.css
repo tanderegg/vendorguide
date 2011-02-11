@@ -687,7 +687,6 @@ input[type="radio"] {
 /* line 160, ../../../../app/stylesheets/flutie/_forms.scss */
 textarea {
   font-size: inherit;
-  height: 200px;
   margin: 0 0.5em 0.5em 0;
   padding: 5px;
   width: 440px;

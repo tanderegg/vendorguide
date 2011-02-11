@@ -1,3 +1,7 @@
+Given /^a vendor exists$/ do
+  @vendor = Vendor.create!(:name => "Test Vendor", :description => "Test Vendor Description")
+end
+
 Given /^the following vendors:$/ do |vendors|
   Vendor.create!(vendors.hashes)
 end

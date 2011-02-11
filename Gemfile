@@ -8,8 +8,8 @@ gem "compass", ">= 0.10.6"
 gem "haml"
 gem 'formtastic'
 
-gem 'devise', :git => 'git://github.com/plataformatec/devise.git',  :branch => 'v1.2.oauth'
-gem 'oauth2', :git => 'git://github.com/intridea/oauth2.git'
+gem 'devise', :git => 'git://github.com/plataformatec/devise.git',  :branch => 'master'
+gem 'oa-oauth', :require => "omniauth/oauth"
 gem 'mogli'
 gem 'dalli'
 gem 'exceptional'
@@ -33,5 +33,6 @@ group :test do
   gem 'factory_girl_rails'
   gem 'shoulda'
   gem 'ZenTest'
+  gem 'fakeweb'
 end
 

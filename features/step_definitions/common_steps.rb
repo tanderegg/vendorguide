@@ -1,6 +1,5 @@
 Given /^I am logged into the site$/ do
-  user = Factory(:user)
-
-  session["warden.user.user.key"] = User.serialize_into_session(user)
+  visit root_url
+  click_link("Sign in with Facebook")
 end
 

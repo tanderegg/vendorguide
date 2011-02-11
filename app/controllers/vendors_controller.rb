@@ -24,4 +24,18 @@ class VendorsController < ApplicationController
       render :action => 'new'
     end
   end
+
+  def edit
+    @vendor = Vendor.find params[:id]
+  end
+
+  def update
+    @vendor = Vendor.find params[:id]
+
+    if @vendor.update_attributes(params[:vendor])
+      redirect_to @vendor
+    else
+      render :action => 'edit'
+    end
+  end
 end

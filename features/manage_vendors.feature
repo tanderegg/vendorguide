@@ -13,13 +13,13 @@ Feature: Manage vendors
 
   Scenario: Edit a new vendor
     Given a vendor exists
-    And I am on the vendor page
     And I am logged into the site
-    When I follow "Edit Description"
+    And I am on the vendor page
+    When I follow "Edit Details"
     And I fill in "Description" with "New Vendor Foo"
-    And I press "Save"
+    And I press "Update Vendor"
     Then I should see "New Vendor Foo"
-    And I follow "History"
-    Then I should see "New Vendor Foo"
-    And I should see "Vendor Description"
+#    And I follow "History"
+#    Then I should see "New Vendor Foo"
+#    And I should see "Vendor Description"
 

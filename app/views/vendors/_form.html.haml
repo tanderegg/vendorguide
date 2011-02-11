@@ -1,6 +1,6 @@
 = semantic_form_for @vendor do |form|
-  - form.inputs do
+  = form.inputs do
     = form.input :name
-    = form.input :description, :as => :text
-  - form.buttons do
+    = form.input :description, :input_html => {:rows => 6}, :as => :text
+  = form.buttons do
     = form.commit_button

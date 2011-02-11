@@ -3,11 +3,7 @@
 Devise.setup do |config|
 
 
-  config.oauth :facebook, ENV['facebook_app_id'], ENV['facebook_app_secret'],
-    :site => 'https://graph.facebook.com/',
-    :authorize_path => '/oauth/authorize',
-    :access_token_path => '/oauth/access_token',
-    :scope => %w(email)
+  config.omniauth :facebook, ENV['facebook_app_id'], ENV['facebook_app_secret']
 
   # ==> Mailer Configuration
   # Configure the e-mail address which will be shown in DeviseMailer.
