@@ -84,12 +84,9 @@ body { background: #4F4F4F url("/images/header_background_tile.png") repeat-x;}
     }
 
     .content_area {
-      .cloud_item {
-        display: inline;
-      }
-
-      .cloud_item .large_text {
-        font-size: 150%;
+      .category_item {
+        font-size: 110%;
+        margin-bottom: 0.25em;
       }
     }
   }
@@ -115,11 +112,17 @@ body { background: #4F4F4F url("/images/header_background_tile.png") repeat-x;}
 
 .vendor {
   .reviews {
-    padding-top: 20px;
-    margin: 10px 8px 8px 10px;
+    margin: 10px 5px 0px 5px;
     .review-inline {
-      padding-bottom: 10px;
-
+      padding-bottom: 20px;
+      
+      .author {
+        float: left;
+        font-size: 125%;
+      }
+      .description {
+        clear: left;
+      }
     }
   }
   .contact_info {
@@ -159,54 +162,6 @@ body { background: #4F4F4F url("/images/header_background_tile.png") repeat-x;}
       font-size: 150%;
     }
 
-    .vendor-rating {
-      float: right;
-      width: 96px;
-      height: 22px;
-      background: url('/images/rating_stars.png') no-repeat;
-      background-position: 0px 0px;
-    }
-
-    .half_star {
-      background-position: 0px -22px;
-    }
-
-    .one_star {
-      background-position: 0px -44px;
-    }
-
-    .one_and_a_half_stars {
-      background-position: 0px -66px;
-    }
-
-    .two_stars {
-      background-position: 0px -88px;
-    }
-
-    .two_and_a_half_stars {
-      background-position: 0px -110px;
-    }
-
-    .three_stars {
-      background-position: 0px -132px;
-    }
-
-    .three_and_a_half_stars {
-      background-position: 0px -154px;
-    }
-
-    .four_stars {
-      background-position: 0px -176px;
-    }
-
-    .four_and_a_half_stars {
-      background-position: 0px -198px;
-    }
-
-    .five_stars {
-      background-position: 0px -220px;
-    }
-
     .vendor-tags {
       padding-top: 1em;
     }
@@ -219,4 +174,60 @@ body { background: #4F4F4F url("/images/header_background_tile.png") repeat-x;}
   .odd {
     background: #F6F6F6;
   }
+}
+
+.vendor-rating {
+  float: right;
+  width: 96px;
+  height: 22px;
+  background: url('/images/rating_stars.png') no-repeat;
+  background-position: 0px 0px;
+}
+
+.review-rating {
+  width: 96px;
+  height: 22px;
+  background: url('/images/rating_stars.png') no-repeat;
+  background-position: 0px 0px;
+  float: left;
+}
+
+.half_star {
+  background-position: 0px -22px;
+}
+
+.one_star {
+  background-position: 0px -44px;
+}
+
+.one_and_a_half_stars {
+  background-position: 0px -66px;
+}
+
+.two_stars {
+  background-position: 0px -88px;
+}
+
+.two_and_a_half_stars {
+  background-position: 0px -110px;
+}
+
+.three_stars {
+  background-position: 0px -132px;
+}
+
+.three_and_a_half_stars {
+  background-position: 0px -154px;
+}
+
+.four_stars {
+  background-position: 0px -176px;
+}
+
+.four_and_a_half_stars {
+  background-position: 0px -198px;
+}
+
+.five_stars {
+  background-position: 0px -220px;
 }

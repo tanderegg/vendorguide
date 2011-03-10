@@ -3,7 +3,7 @@ Vendorguide::Application.routes.draw do
   root :to => "vendors#index"
   resources :vendors
   resources :reviews
-  devise_for :users, :controllers => { :omniauth_callbacks => "users/omniauth_callbacks" }
+  devise_for :users, :controllers => { :registrations => "admin/users", :omniauth_callbacks => "users/omniauth_callbacks" }
 
   namespace :admin do
     resources :users

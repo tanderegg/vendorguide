@@ -16,8 +16,17 @@
       = @vendor.email
     %p
       = link_to @vendor.website, @vendor.website
+
+  .vendor-rating{ :class => get_rating_class(@vendor.reviews.average(:score)) }
+
   %h2
     = @vendor.name
+
+  = link_to "Edit Details", edit_vendor_path(@vendor)
+
+  %br
+  %br
+
   %h4
     Description
   %p
@@ -43,13 +52,16 @@
   %p
     = raw RedCloth.new(@vendor.press).to_html if @vendor.press
 
-  = link_to "Edit Details", edit_vendor_path(@vendor)
+  %hr
+
   .reviews
     - @vendor.reviews.each do |review|
       .review-inline
         .author
           = review.user.name
-        = review.description
+        .review-rating{ :class => get_rating_class(review.score) }
+        .description
+          = review.description
   %hr
 
   -if current_user

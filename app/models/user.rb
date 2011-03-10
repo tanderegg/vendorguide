@@ -1,12 +1,12 @@
 class User < ActiveRecord::Base
   # Include default devise modules. Others available are:
   # :token_authenticatable, :confirmable, :lockable and :timeoutable
-  devise :database_authenticatable, :omniauthable
+  devise :database_authenticatable, :omniauthable, :registerable
 
   # Setup accessible (or protected) attributes for your model
   attr_accessible :email, :password, :password_confirmation, :remember_me, :facebook_token, :facebook_id, :first_name, :last_name
 
-  validates_presence_of :facebook_token
+#  validates_presence_of :facebook_token
 
   MyMogliStub = Struct.new(:first_name, :last_name, :square_image_url)
 

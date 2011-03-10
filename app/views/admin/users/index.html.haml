@@ -1,10 +1,10 @@
 - if @users.any?
   .user_list
-    - @users.each do |user|
-      %table
-        %tr
-          %th 
-            Name
-        %tr
-          %td 
-            = link_to user.name, admin_user_path(user)
+    %table
+      %tr
+        %th 
+          Name
+        - @users.each do |user|
+          %tr
+            %td 
+              = link_to user.name, admin_user_path(user)

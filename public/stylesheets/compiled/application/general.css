@@ -107,14 +107,11 @@ body {
   margin-bottom: 10px;
 }
 /* line 87, ../../../../app/stylesheets/application/general.scss */
-.wrapper .sidebar .content_area .cloud_item {
-  display: inline;
+.wrapper .sidebar .content_area .category_item {
+  font-size: 110%;
+  margin-bottom: 0.25em;
 }
-/* line 91, ../../../../app/stylesheets/application/general.scss */
-.wrapper .sidebar .content_area .cloud_item .large_text {
-  font-size: 150%;
-}
-/* line 97, ../../../../app/stylesheets/application/general.scss */
+/* line 94, ../../../../app/stylesheets/application/general.scss */
 .wrapper .content {
   background: #fff;
   padding: 20px;
@@ -128,7 +125,7 @@ body {
   border-top-right-radius: 24px;
   min-height: 400px;
 }
-/* line 106, ../../../../app/stylesheets/application/general.scss */
+/* line 103, ../../../../app/stylesheets/application/general.scss */
 .wrapper .footer {
   background: #333;
   clear: left;
@@ -138,16 +135,24 @@ body {
   text-align: center;
 }
 
-/* line 117, ../../../../app/stylesheets/application/general.scss */
+/* line 114, ../../../../app/stylesheets/application/general.scss */
 .vendor .reviews {
-  padding-top: 20px;
-  margin: 10px 8px 8px 10px;
+  margin: 10px 5px 0px 5px;
 }
-/* line 120, ../../../../app/stylesheets/application/general.scss */
+/* line 116, ../../../../app/stylesheets/application/general.scss */
 .vendor .reviews .review-inline {
-  padding-bottom: 10px;
+  padding-bottom: 20px;
 }
-/* line 125, ../../../../app/stylesheets/application/general.scss */
+/* line 119, ../../../../app/stylesheets/application/general.scss */
+.vendor .reviews .review-inline .author {
+  float: left;
+  font-size: 125%;
+}
+/* line 123, ../../../../app/stylesheets/application/general.scss */
+.vendor .reviews .review-inline .description {
+  clear: left;
+}
+/* line 128, ../../../../app/stylesheets/application/general.scss */
 .vendor .contact_info {
   float: right;
   padding: 1em;
@@ -156,7 +161,7 @@ body {
   border: 1px solid #D1C88B;
 }
 
-/* line 134, ../../../../app/stylesheets/application/general.scss */
+/* line 137, ../../../../app/stylesheets/application/general.scss */
 .add-vendor {
   float: right;
   background: url("/images/icons/add.png") no-repeat left;
@@ -164,7 +169,7 @@ body {
   height: 16px;
 }
 
-/* line 141, ../../../../app/stylesheets/application/general.scss */
+/* line 144, ../../../../app/stylesheets/application/general.scss */
 .vendor-search-label {
   float: left;
   font-weight: bold;
@@ -172,79 +177,99 @@ body {
   margin-right: 0.5em;
 }
 
-/* line 148, ../../../../app/stylesheets/application/general.scss */
+/* line 151, ../../../../app/stylesheets/application/general.scss */
 .vendor-list {
   clear: right;
   padding-top: 0.5em;
 }
-/* line 152, ../../../../app/stylesheets/application/general.scss */
+/* line 155, ../../../../app/stylesheets/application/general.scss */
 .vendor-list .vendor-row {
   padding: 0.5em;
   background: #CCC;
 }
-/* line 156, ../../../../app/stylesheets/application/general.scss */
+/* line 159, ../../../../app/stylesheets/application/general.scss */
 .vendor-list .vendor-row .vendor-name {
   float: left;
   width: 20em;
   font-size: 150%;
 }
-/* line 162, ../../../../app/stylesheets/application/general.scss */
-.vendor-list .vendor-row .vendor-rating {
+/* line 165, ../../../../app/stylesheets/application/general.scss */
+.vendor-list .vendor-row .vendor-tags {
+  padding-top: 1em;
+}
+/* line 170, ../../../../app/stylesheets/application/general.scss */
+.vendor-list .even {
+  background: #EEEEFF;
+}
+/* line 174, ../../../../app/stylesheets/application/general.scss */
+.vendor-list .odd {
+  background: #F6F6F6;
+}
+
+/* line 179, ../../../../app/stylesheets/application/general.scss */
+.vendor-rating {
   float: right;
   width: 96px;
   height: 22px;
   background: url("/images/rating_stars.png") no-repeat;
   background-position: 0px 0px;
 }
-/* line 170, ../../../../app/stylesheets/application/general.scss */
-.vendor-list .vendor-row .half_star {
+
+/* line 187, ../../../../app/stylesheets/application/general.scss */
+.review-rating {
+  width: 96px;
+  height: 22px;
+  background: url("/images/rating_stars.png") no-repeat;
+  background-position: 0px 0px;
+  float: left;
+}
+
+/* line 195, ../../../../app/stylesheets/application/general.scss */
+.half_star {
   background-position: 0px -22px;
 }
-/* line 174, ../../../../app/stylesheets/application/general.scss */
-.vendor-list .vendor-row .one_star {
+
+/* line 199, ../../../../app/stylesheets/application/general.scss */
+.one_star {
   background-position: 0px -44px;
 }
-/* line 178, ../../../../app/stylesheets/application/general.scss */
-.vendor-list .vendor-row .one_and_a_half_stars {
+
+/* line 203, ../../../../app/stylesheets/application/general.scss */
+.one_and_a_half_stars {
   background-position: 0px -66px;
 }
-/* line 182, ../../../../app/stylesheets/application/general.scss */
-.vendor-list .vendor-row .two_stars {
+
+/* line 207, ../../../../app/stylesheets/application/general.scss */
+.two_stars {
   background-position: 0px -88px;
 }
-/* line 186, ../../../../app/stylesheets/application/general.scss */
-.vendor-list .vendor-row .two_and_a_half_stars {
+
+/* line 211, ../../../../app/stylesheets/application/general.scss */
+.two_and_a_half_stars {
   background-position: 0px -110px;
 }
-/* line 190, ../../../../app/stylesheets/application/general.scss */
-.vendor-list .vendor-row .three_stars {
+
+/* line 215, ../../../../app/stylesheets/application/general.scss */
+.three_stars {
   background-position: 0px -132px;
 }
-/* line 194, ../../../../app/stylesheets/application/general.scss */
-.vendor-list .vendor-row .three_and_a_half_stars {
+
+/* line 219, ../../../../app/stylesheets/application/general.scss */
+.three_and_a_half_stars {
   background-position: 0px -154px;
 }
-/* line 198, ../../../../app/stylesheets/application/general.scss */
-.vendor-list .vendor-row .four_stars {
+
+/* line 223, ../../../../app/stylesheets/application/general.scss */
+.four_stars {
   background-position: 0px -176px;
 }
-/* line 202, ../../../../app/stylesheets/application/general.scss */
-.vendor-list .vendor-row .four_and_a_half_stars {
+
+/* line 227, ../../../../app/stylesheets/application/general.scss */
+.four_and_a_half_stars {
   background-position: 0px -198px;
 }
-/* line 206, ../../../../app/stylesheets/application/general.scss */
-.vendor-list .vendor-row .five_stars {
+
+/* line 231, ../../../../app/stylesheets/application/general.scss */
+.five_stars {
   background-position: 0px -220px;
-}
-/* line 210, ../../../../app/stylesheets/application/general.scss */
-.vendor-list .vendor-row .vendor-tags {
-  padding-top: 1em;
-}
-/* line 215, ../../../../app/stylesheets/application/general.scss */
-.vendor-list .even {
-  background: #EEEEFF;
-}
-/* line 219, ../../../../app/stylesheets/application/general.scss */
-.vendor-list .odd {
-  background: #F6F6F6;
 }

@@ -5,3 +5,4 @@ tmp/**/*
 test/
 .idea
 .idea/*
+public/stylesheets/compiled/**/*
