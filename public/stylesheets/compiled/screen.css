@@ -894,7 +894,7 @@ img {
 }
 
 /* line 11, ../../../app/stylesheets/application/general.scss */
-a {
+a, a:focus, a:active {
   text-decoration: none;
 }
 
