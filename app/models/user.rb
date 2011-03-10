@@ -32,7 +32,7 @@ class User < ActiveRecord::Base
   end
 
   def name
-    "#{first_name} #{last_name[0]}."
+    "#{first_name} #{last_name[0].to_s}."
   end
 
   def facebook_client
