@@ -161,8 +161,50 @@ body { background: #4F4F4F url("/images/header_background_tile.png") repeat-x;}
 
     .vendor-rating {
       float: right;
-      width: 7em;
-      font-size: 150%;
+      width: 96px;
+      height: 22px;
+      background: url('/images/rating_stars.png') no-repeat;
+      background-position: 0px 0px;
+    }
+
+    .half_star {
+      background-position: 0px -22px;
+    }
+
+    .one_star {
+      background-position: 0px -44px;
+    }
+
+    .one_and_a_half_stars {
+      background-position: 0px -66px;
+    }
+
+    .two_stars {
+      background-position: 0px -88px;
+    }
+
+    .two_and_a_half_stars {
+      background-position: 0px -110px;
+    }
+
+    .three_stars {
+      background-position: 0px -132px;
+    }
+
+    .three_and_a_half_stars {
+      background-position: 0px -154px;
+    }
+
+    .four_stars {
+      background-position: 0px -176px;
+    }
+
+    .four_and_a_half_stars {
+      background-position: 0px -198px;
+    }
+
+    .five_stars {
+      background-position: 0px -220px;
     }
 
     .vendor-tags {

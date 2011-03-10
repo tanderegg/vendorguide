@@ -11,8 +11,7 @@
       %div{ :class => 'vendor-row ' + cycle('odd', 'even') }
         .vendor-name
           = link_to vendor.name, vendor
-        .vendor-rating
-          = "Rating: " + vendor.rating
+        .vendor-rating{ :class => vendor.get_rating_class }
         %br/
         .vendor-tags
           = raw("<strong>Tags: </strong>" + vendor.tags)        
